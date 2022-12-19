@@ -67,15 +67,6 @@ export default function CommandPalette() {
           </Command.Group>
         </Command.List>
       </Command.Dialog>
-      {/* <motion.button
-        onClick={() => setOpen(true)}
-        aria-label="Open command palette"
-        type="button"
-        className="w-8 h-8 p-1 rounded hidden sm:block"
-        whileHover={{ scale: 1.2 }}
-      >
-        <TbCommand size={22} className="ext-gray-100" />
-      </motion.button> */}
     </>
   )
 }

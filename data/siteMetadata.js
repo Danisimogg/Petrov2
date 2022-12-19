@@ -1,8 +1,8 @@
 const siteMetadata = {
-  title: 'Dale Larroder',
-  author: 'Dale Larroder',
-  headerTitle: 'dalelarroder',
-  description: 'Software Engineer at Aphex',
+  title: 'Svayatoslav Petrov',
+  author: 'Svayatoslav Petrov',
+  headerTitle: 'petrov',
+  description: 'Composer',
   language: 'en-us',
   theme: 'dark', // system, dark or light
   siteUrl: 'https://dalelarroder.com',

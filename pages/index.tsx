@@ -1,7 +1,6 @@
 import Header from '@/components/Header'
 import Hero from '@/components/Hero'
 import Intro from '@/components/Intro/Intro'
-import RecentPosts from '@/components/RecentPosts'
 import SectionContainer from '@/components/SectionContainer'
 import { PageSEO } from '@/components/SEO'
 import TopTracks from '@/components/Spotify/TopTrack'
@@ -30,8 +29,8 @@ export default function Home({ posts }: InferGetStaticPropsType<typeof getStatic
       <Intro />
       <Works />
       <HomeLayout>
-        <RecentPosts posts={posts} />
         <TopTracks />
+        {/* <ContactMe/> */}
       </HomeLayout>
     </>
   )

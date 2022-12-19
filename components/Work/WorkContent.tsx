@@ -10,7 +10,7 @@ interface WorkContentProps {
 }
 
 export default function WorkContent({ work, progress = 0 }: WorkContentProps) {
-  const { title, description, image } = work
+  const { title, description, component } = work
   return (
     <WorkContainer>
       <WorkLeft progress={progress}>
@@ -18,15 +18,7 @@ export default function WorkContent({ work, progress = 0 }: WorkContentProps) {
         <span className="text-4xl md:text-5xl xl:text-6xl font-bold tracking-tight">{title}</span>
       </WorkLeft>
       <WorkRight progress={progress}>
-        <div className="drop-shadow-2xl md:mt-24 sm:mt-10">
-          <Image
-            src={image.src}
-            alt={title}
-            layout="responsive"
-            width={image.width}
-            height={image.height}
-          />
-        </div>
+        <div className="drop-shadow-2xl md:mt-24 sm:mt-10">{component}</div>
       </WorkRight>
     </WorkContainer>
   )
