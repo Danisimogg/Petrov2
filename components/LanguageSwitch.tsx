@@ -1,8 +1,6 @@
 import { motion } from 'framer-motion'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
-import { useEffect, useState } from 'react'
-import { useTheme } from 'next-themes'
 
 const LanguageSwitch = () => {
   const router = useRouter()
@@ -10,33 +8,7 @@ const LanguageSwitch = () => {
   const { locales, locale: activeLocale } = router
   const otherLocales = locales?.filter((locale) => locale !== activeLocale && locale !== 'default')
 
-  // const t = locale === 'en' ? en : fr
-
-  // const changeLanguage = (e: any) => {
-  //   // const locale = e.target.value
-  //   // router.push(router.pathname, router.asPath, { locale })
-  //   console.log(locale)
-  // }
-  const { theme, setTheme, resolvedTheme } = useTheme()
-
-  // When mounted on client, now we can show the UI
-  useEffect(() => setMounted(true), [])
-  const [mounted, setMounted] = useState(false)
-
   return (
-    /* It's a fragment. */
-    // <>
-    //   {otherLocales?.map((locale) => {
-    //     const { pathname, query, asPath } = router
-    //     return (
-    //       <span key={'locale-' + locale}>
-    //         <Link href={{ pathname, query }} as={asPath} locale={locale}>
-    //           {locale === 'en' ? 'English' : locale === 'ja' ? 'ja' : null}
-    //         </Link>
-    //       </span>
-    //     )
-    //   })}
-    // </>
     <>
       {otherLocales?.map((locale) => {
         const { pathname, query, asPath } = router

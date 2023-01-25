@@ -52,7 +52,7 @@ const Contact: FC = () => {
                     name="name"
                     id="name"
                     className="block w-full rounded-md border border-gray-300  py-3 px-4 text-sm focus:border-blue-500 focus:ring-blue-500 dark:border-gray-700 dark:bg-gray-800 dark:text-gray-400"
-                    placeholder="Your Full Name"
+                    placeholder={t ? 'Your Full Name' : ' お名前（フルネーム'}
                   />
                 </div>
 
@@ -66,7 +66,7 @@ const Contact: FC = () => {
                     id="email"
                     autoComplete="email"
                     className="block w-full rounded-md border border-gray-300  py-3 px-4 text-sm focus:border-blue-500 focus:ring-blue-500 dark:border-gray-700 dark:bg-gray-800 dark:text-gray-400"
-                    placeholder="Email"
+                    placeholder={t ? 'Email' : ' 電子メール'}
                   />
                 </div>
 
@@ -79,7 +79,7 @@ const Contact: FC = () => {
                     name="message"
                     rows={4}
                     className="block w-full rounded-md border border-gray-300  py-3 px-4 text-sm focus:border-blue-500 focus:ring-blue-500 dark:border-gray-700 dark:bg-gray-800 dark:text-gray-400"
-                    placeholder="Details"
+                    placeholder={t ? 'Details' : ' 詳細情報'}
                   />
                 </div>
               </div>
@@ -179,10 +179,12 @@ const Contact: FC = () => {
               </svg>
               <div>
                 <h3 className="font-semibold text-gray-800 dark:text-gray-200">
-                  Contact us by email
+                  {t ? 'Contact us by email' : 'Eメールでのお問い合わせ'}
                 </h3>
                 <p className="mt-1 text-sm text-gray-500">
-                  If you wish to write us an email instead please use
+                  {t
+                    ? 'If you wish to write us an email instead, please use'
+                    : 'メールでのお問い合わせはこちらからどうぞ。'}
                 </p>
                 <a
                   className="mt-2 inline-flex items-center gap-x-2 text-sm font-medium text-gray-600 underline hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-200"

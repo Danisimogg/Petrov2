@@ -1,6 +1,7 @@
 import React, { FC } from 'react'
 import s from './style/portfolio.module.css'
 import Link from 'next/link'
+import { useRouter } from 'next/router'
 
 const data = [
   {
@@ -58,7 +59,11 @@ const PortfolioVideo: FC = () => {
   function createMarkup(html: string) {
     return { __html: html }
   }
+  const router = useRouter()
 
+  const { locale } = router
+
+  const t = locale === 'en'
   return (
     <section id="portfolio">
       <div className={`container ${s.portfolio__container}`}>
@@ -80,18 +85,24 @@ const PortfolioVideo: FC = () => {
                 <div className="p-3 sm:p-1">
                   <p className="mb-2 block  text-sm text-gray-600 font-bold">
                     {fullMusic
-                      ? 'Music By Svyatoslav Petrov'
-                      : 'Part of the music by Petrov Svyatoslav'}
+                      ? t
+                        ? 'Music By Svyatoslav Petrov'
+                        : ' ミュージック・バイ Svyatoslav Petrov'
+                      : t
+                      ? 'Part of the music by Petrov Svyatoslav'
+                      : '音楽の一部を担当した'}
                   </p>
                   <p className="mb-2 text-sm text-gray-600 font-bold">
-                    Company Official Site:{' '}
+                    {t ? 'Company Official Site:' : ' 会社のオフィシャルサイトです。'}{' '}
                     <span className="text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0">
                       <Link href={site}>{company}</Link>
                     </span>
                   </p>
 
                   <div className="flex flex-wrap gap-1">
-                    <h4 className="text-sm text-gray-600 font-bold">Platforms:</h4>
+                    <h4 className="text-sm text-gray-600 font-bold">
+                      {t ? 'Platforms:' : ' ゲームプラットフォーム'}
+                    </h4>
                     {platforms.steam && (
                       <span className="flex flex-col justify-center items-center whitespace-nowrap rounded-full bg-purple-100 px-2.5 py-0.5 text-xs text-purple-600">
                         Steam
