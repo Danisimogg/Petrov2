@@ -97,7 +97,7 @@ const Portfolio: FC = () => {
           </div>
 
           <div className="grid grid-cols-2 gap-4 rounded-lg md:grid-cols-3 lg:gap-6">
-            <div className="flex h-36 items-center justify-center rounded-lg bg-gray-100 p-4 text-gray-400 sm:h-32">
+            <div className="flex h-16 items-center justify-center rounded-lg bg-gray-100 p-4 text-gray-400 sm:h-32">
               <span className="h-5  justify-between text-center  sm:h-8 ">
                 <svg
                   className="h-6 w-auto sm:h-8"

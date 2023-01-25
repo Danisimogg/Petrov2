@@ -68,18 +68,30 @@ const PortfolioVideo: FC = () => {
               key={id}
               className="overflow-hidden rounded-lg border border-gray-100 shadow-sm"
             >
-              <div className="h-full rounded-[10px] bg-white sm:p-6">
+              <div className="h-full rounded-[10px] bg-white sm:p-1">
                 <span className="object-cover w-full h-48 rounded-xl">
                   <span dangerouslySetInnerHTML={createMarkup(image)} />
                 </span>
-                <time dateTime="2022-10-10" className="mt-4 block p-4 text-xs text-gray-500">
-                  {fullMusic
-                    ? 'Music By Svyatoslav Petrov'
-                    : 'Part of the music by Petrov Svyatoslav'}{' '}
-                </time>
-                <div className="p-3 sm:p-6">
-                  <div className="mt-4 flex flex-wrap gap-1">
-                    <h4>Platforms:</h4>
+                <p className="block p-2 text-sm text-gray-800 font-bold text-center">
+                  <strong>{title} </strong>
+                </p>
+                <hr />
+
+                <div className="p-3 sm:p-1">
+                  <p className="mb-2 block  text-sm text-gray-600 font-bold">
+                    {fullMusic
+                      ? 'Music By Svyatoslav Petrov'
+                      : 'Part of the music by Petrov Svyatoslav'}
+                  </p>
+                  <p className="mb-2 text-sm text-gray-600 font-bold">
+                    Company Official Site:{' '}
+                    <span className="text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0">
+                      <Link href={site}>{company}</Link>
+                    </span>
+                  </p>
+
+                  <div className="flex flex-wrap gap-1">
+                    <h4 className="text-sm text-gray-600 font-bold">Platforms:</h4>
                     {platforms.steam && (
                       <span className="flex flex-col justify-center items-center whitespace-nowrap rounded-full bg-purple-100 px-2.5 py-0.5 text-xs text-purple-600">
                         Steam
@@ -112,26 +124,6 @@ const PortfolioVideo: FC = () => {
                       </span>
                     )}
                   </div>
-                </div>
-                <div>
-                  <p>Company:</p>
-
-                  <Link
-                    href="/"
-                    className="inline-flex items-center font-semibold transition-colors duration-200 text-deep-purple-accent-400 hover:text-deep-purple-800"
-                  >
-                    Link
-                  </Link>
-                </div>
-                <div>
-                  <p>Company official website</p>
-
-                  <Link
-                    href="/"
-                    className="inline-flex items-center font-semibold transition-colors duration-200 text-deep-purple-accent-400 hover:text-deep-purple-800"
-                  >
-                    Link
-                  </Link>
                 </div>
               </div>
             </article>
