@@ -4,8 +4,12 @@ import React, { useRef } from 'react'
 import { RiMessengerLine } from 'react-icons/ri'
 import { RxDiscordLogo } from 'react-icons/rx'
 import emailjs from 'emailjs-com'
+import { useRouter } from 'next/router'
 
 const Contact: FC = () => {
+  const router = useRouter()
+  const { locale } = router
+  const t = locale === 'en'
   const form = useRef()
   const sendEmail = (e: any) => {
     e.preventDefault()
@@ -24,24 +28,24 @@ const Contact: FC = () => {
       <div className="mx-auto max-w-2xl lg:max-w-5xl">
         <div className="text-center">
           <h1 className="text-3xl font-bold text-gray-800 dark:text-white sm:text-4xl">
-            Contact me
+            {t ? 'Contact me' : ' お問い合わせはこちら'}
           </h1>
           <p className="mt-1 text-gray-600 dark:text-gray-400">
-            We'd love to talk about how we can help you.
+            {t ? "We'd love to talk about how we can help you." : ' 是非、ご相談ください。'}
           </p>
         </div>
 
         <div className="mt-12 grid items-center gap-6 lg:grid-cols-2 lg:gap-16">
           <div className="flex flex-col rounded-xl border p-4 dark:border-gray-700 sm:p-6 lg:p-8">
             <h2 className="mb-8 text-xl font-semibold text-gray-800 dark:text-gray-200">
-              Fill in the htmlForm
+              {t ? 'Fill in the Form' : ' フォームに記入する'}
             </h2>
 
             <form ref={form as any} onSubmit={sendEmail}>
               <div className="grid gap-3">
                 <div>
                   <label htmlFor="name" className="sr-only">
-                    Your Full Name
+                    {t ? 'Your Full Name' : ' お名前（フルネーム'}
                   </label>
                   <input
                     type="text"
@@ -54,7 +58,7 @@ const Contact: FC = () => {
 
                 <div>
                   <label htmlFor="email" className="sr-only">
-                    Email
+                    {t ? 'Email' : ' 電子メール'}
                   </label>
                   <input
                     type="email"
@@ -68,7 +72,7 @@ const Contact: FC = () => {
 
                 <div>
                   <label htmlFor="message" className="sr-only">
-                    Details
+                    {t ? 'Details' : ' 詳細情報'}
                   </label>
                   <textarea
                     id="message"
@@ -85,12 +89,16 @@ const Contact: FC = () => {
                   type="submit"
                   className="inline-flex items-center justify-center gap-x-3 rounded-md border border-transparent bg-blue-600 py-3 px-4 text-center text-sm font-medium text-white transition hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-600 focus:ring-offset-2 focus:ring-offset-white dark:focus:ring-offset-gray-800 lg:text-base"
                 >
-                  Send inquiry
+                  {t ? 'Send inquiry' : ' お問い合わせを送信'}
                 </button>
               </div>
 
               <div className="mt-3 text-center">
-                <p className="text-sm text-gray-500">We'll get back to you in 1-2 business days.</p>
+                <p className="text-sm text-gray-500">
+                  {t
+                    ? "We'll get back to you in 1-2 business days."
+                    : ' 1-2営業日以内にご返信いたします。'}
+                </p>
               </div>
             </form>
           </div>

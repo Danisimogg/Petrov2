@@ -9,6 +9,10 @@ const withBundleAnalyzer = require('@next/bundle-analyzer')({
  **/
 module.exports = withContentlayer(
   withBundleAnalyzer({
+    i18n: {
+      locales: ['en', 'ja'],
+      defaultLocale: 'ja',
+    },
     reactStrictMode: true,
     pageExtensions: ['ts', 'tsx', 'js', 'jsx', 'md', 'mdx'],
     eslint: {

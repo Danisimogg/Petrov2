@@ -7,6 +7,7 @@ import React, { FC, useState, useEffect, createRef } from 'react'
 import loadscript from 'load-script'
 import s from './style/portfolio.module.css'
 import PortfolioVideo from './PortfolioVideo'
+import { useRouter } from 'next/router'
 
 declare global {
   interface Window {
@@ -15,6 +16,11 @@ declare global {
 }
 
 const Portfolio: FC = () => {
+  const router = useRouter()
+
+  const { locale } = router
+
+  const t = locale === 'en'
   // used to communicate between SC widget and React
   const [isPlaying, setIsPlaying] = useState(false)
   const [playlistIndex, setPlaylistIndex] = useState(0)
@@ -87,12 +93,12 @@ const Portfolio: FC = () => {
         <div className="mx-auto max-w-screen-2xl px-4 md:px-8">
           <div className="mb-4 flex flex-col items-center md:mb-8 lg:flex-row lg:justify-between">
             <h2 className="mb-2 text-center text-2xl font-bold text-gray-800 lg:mb-0 lg:text-3xl">
-              Projects i work on:
+              {t ? ' Projects i work on:' : ' 私が取り組むプロジェクト'}
             </h2>
-
             <p className="max-w-md text-center text-gray-400 lg:text-right">
-              A lot of works on which I worked and working are under NDA, so for more information,
-              don’t hesitate to contact me.
+              {t
+                ? ' A lot of works on which I worked and working are under NDA, so for more information, don’t hesitate to contact me.'
+                : ' 私が手がけた作品の多くは を、NDAの下で行っています。私まで。'}
             </p>
           </div>
 

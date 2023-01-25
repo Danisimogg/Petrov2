@@ -28,8 +28,9 @@ const data = [
     name: 'Annika Maar',
     position: 'CEO',
     review:
-      'Working with Svyatoslav is always a blast! He knows exactly what we want from a piece and puts his own personal spin on it.\r\nスビアトスラブと一緒に制作するっていつも安心で楽しいです。個人性の込めたシーンにぴったりな音楽です。',
+      'Working with Svyatoslav is always a blast! He knows exactly what we want from a piece and puts his own personal spin on it.',
   },
+  // \r\nスビアトスラブと一緒に制作するっていつも安心で楽しいです。個人性の込めたシーンにぴったりな音楽です。
   {
     avatar: Kuo,
     name: 'Kuo Yu',

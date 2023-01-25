@@ -2,6 +2,7 @@ import { AnimatePresence, motion } from 'framer-motion'
 import Link from 'next/link'
 import { ReactElement, useContext, useEffect, useRef } from 'react'
 import { HiOutlineArrowNarrowDown } from 'react-icons/hi'
+import { useRouter } from 'next/router'
 import FadeDown from './Animations/FadeDown'
 import FadeRight from './Animations/FadeRight'
 import FadeUp from './Animations/FadeUp'
@@ -11,7 +12,11 @@ import { ScrollContext } from './ScrollObserver'
 export default function Hero(): ReactElement {
   const ref = useRef<HTMLHeadingElement>(null)
   const { scrollY } = useContext(ScrollContext)
+  const router = useRouter()
 
+  const { locale } = router
+
+  const t = locale === 'en'
   let progress = 0
   const { current: elContainer } = ref
 
@@ -25,9 +30,7 @@ export default function Hero(): ReactElement {
 
   return (
     <div>
-      <h1 className="sr-only">
-        Hello I'm Svyatoslv Petrov, I'm a composer. and lox lox loh loh loh
-      </h1>
+      <h1 className="sr-only">Hello I'm Svyatoslv Petrov, I'm a composer.</h1>
       <motion.div
         className="relative z-10 flex h-[calc(100vh-81px)] md:h-[calc(100vh-116px)] items-center"
         animate={{
@@ -46,7 +49,7 @@ export default function Hero(): ReactElement {
                 </FadeUp>
                 <FadeUp duration={0.6} delay={0.2}>
                   <h2 className="font-medium opacity-80 text-3xl sm:text-6xl md:text-6xl xl:text-7xl">
-                    I create music.
+                    {t ? 'I create music.' : '私は音楽を創る.'}
                   </h2>
                 </FadeUp>
                 <FadeRight duration={0.5} delay={0.8}>
@@ -54,7 +57,7 @@ export default function Hero(): ReactElement {
                     href="/about"
                     className="underline-magical cursor-pointer w-max text-md sm:text-lg md:text-xl xl:text-2xl"
                   >
-                    Read more about me &rarr;
+                    {t ? 'Read more about me' : '私についてもっと読む'} &rarr;
                   </Link>
                 </FadeRight>
               </div>
