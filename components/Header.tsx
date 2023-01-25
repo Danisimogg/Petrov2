@@ -5,6 +5,7 @@ import { useRouter } from 'next/router'
 import CommandPalette from './CommandPalette/CommandPalette'
 import MobileNav from './MobileNav'
 import ThemeSwitch from './ThemeSwitch'
+import LanguageSwitch from './LanguageSwitch'
 
 export default function Header() {
   const router = useRouter()
@@ -49,6 +50,7 @@ export default function Header() {
           <div className="flex items-center">
             <CommandPalette />
             <ThemeSwitch />
+            <LanguageSwitch />
             <MobileNav />
           </div>
         </div>

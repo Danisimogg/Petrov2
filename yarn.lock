@@ -5220,6 +5220,11 @@ listr2@^4.0.5:
     through "^2.3.8"
     wrap-ansi "^7.0.0"
 
+load-script@^2.0.0:
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/load-script/-/load-script-2.0.0.tgz#40821aaa59e9bbe7be2e28b6ab053e6f44330fa1"
+  integrity sha512-km6cyoPW4rM22JMGb+SHUKPMZVDpUaMpMAKrv8UHWllIxc/qjgMGHD91nY+5hM+/NFs310OZ2pqQeJKs7HqWPA==
+
 loader-utils@^2.0.0:
   version "2.0.2"
   resolved "https://registry.yarnpkg.com/loader-utils/-/loader-utils-2.0.2.tgz#d6e3b4fb81870721ae4e0868ab11dd638368c129"

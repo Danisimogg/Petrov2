@@ -1,20 +1,19 @@
+/* eslint-disable jsx-a11y/iframe-has-title */
+import { ReactNode } from 'react'
+
+import Testimonials from '../Testimonials'
+
 export type WorkTile = {
   title: string
   description: string
+  component?: ReactNode
 }
 
 export const workTiles: WorkTile[] = [
   {
     description: `Review from clients`,
     title: `Testimonials`,
-  },
-  {
-    description: `Videos related to projects i work`,
-    title: `Portfolio`,
-  },
-  {
-    description: `A lot of works on which I worked and working are under NDA, so for more information, don’t hesitate to contact me.`,
-    title: `Projects i work on:`,
+    component: <Testimonials />,
   },
   // {
   //   description: 'I helped build',

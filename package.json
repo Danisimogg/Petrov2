@@ -1,5 +1,5 @@
 {
-  "name": "dalelarroder.com",
+  "name": "petrov.com",
   "version": "2.0.0",
   "private": true,
   "scripts": {
@@ -14,9 +14,6 @@
     "prepare": "husky install"
   },
   "dependencies": {
-    "react-icons": "^4.7.1",
-    "emailjs-com": "^3.2.0",
-    "react-responsive-carousel": "^3.2.23",
     "@dlarroder/playground": "^1.2.2",
     "@fontsource/mukta": "4.5.10",
     "@next/font": "^13.0.1",
@@ -24,9 +21,11 @@
     "classnames": "2.3.2",
     "cmdk": "^0.1.20",
     "contentlayer": "0.2.8",
+    "emailjs-com": "^3.2.0",
     "esbuild": "0.14.47",
     "framer-motion": "7.6.1",
     "github-slugger": "1.4.0",
+    "load-script": "^2.0.0",
     "logrocket": "3.0.1",
     "mdx-bundler": "9.0.1",
     "next": "13.0.1",
@@ -35,6 +34,8 @@
     "nprogress": "0.2.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "react-icons": "^4.7.1",
+    "react-responsive-carousel": "^3.2.23",
     "reading-time": "1.5.0",
     "rehype-autolink-headings": "6.1.1",
     "rehype-prism-plus": "1.5.0",

@@ -45,10 +45,10 @@ export const Authors = defineDocumentType(() => ({
     occupation: { type: 'string' },
     company: { type: 'string' },
     email: { type: 'string' },
+    soundCloud: { type: 'string' },
+    facebook: { type: 'string' },
+    spotify: { type: 'string' },
     twitter: { type: 'string' },
-    linkedin: { type: 'string' },
-    github: { type: 'string' },
-    layout: { type: 'string' },
   },
   computedFields,
 }))

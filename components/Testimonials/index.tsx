@@ -44,7 +44,7 @@ const Testimonials: FC = () => (
   <Carousel showStatus={false} showArrows={false} autoPlay swipeable useKeyboardArrows infiniteLoop>
     {data.map(({ avatar, name, review }, index) => {
       return (
-        <div className="rounded-lg bg-white p-8  mx-auto max-w-5xl px-4 py-8 shadow-xl" key={name}>
+        <div className="rounded-lg bg-white p-8  mx-auto max-w-5xl px-4 py-8" key={name}>
           <div className="grid grid-cols-1 gap-12 sm:grid-cols-3 sm:items-center">
             <Image
               alt="Man"
