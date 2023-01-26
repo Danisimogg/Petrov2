@@ -52,6 +52,7 @@ const Testimonials: FC = () => {
   return (
     <div style={{ zIndex: 99999 }}>
       <Carousel
+        interval={11000}
         showStatus={true}
         showArrows={true}
         autoPlay
