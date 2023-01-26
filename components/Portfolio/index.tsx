@@ -40,8 +40,7 @@ const Portfolio: FC = () => {
                   fill="currentColor"
                   xmlns="http://www.w3.org/2000/svg"
                 >
-                  <path d="M24 8V20L12 32H0V20L12 8H24Z" />
-                  <text x="30" y="25" fontWeight={700} fontSize={16}>
+                  <text x="10" y="25" fontWeight={700} fontSize={16}>
                     World of Tanks blitz
                   </text>
                 </svg>
@@ -56,10 +55,9 @@ const Portfolio: FC = () => {
                 fill="currentColor"
                 xmlns="http://www.w3.org/2000/svg"
               >
-                <text x="30" y="25" fontWeight={700} fontSize={16}>
+                <text x="10" y="25" fontWeight={700} fontSize={16}>
                   King and the Great Hero
                 </text>
-                <path d="M0 31L24 7V31H0Z" />
               </svg>
             </div>
 
@@ -72,9 +70,7 @@ const Portfolio: FC = () => {
                 fill="currentColor"
                 xmlns="http://www.w3.org/2000/svg"
               >
-                <rect x="30" y="26" width="24" height="5" />
-                <rect x="30" y="17" width="15" height="5" />
-                <text fontWeight={700} fontSize={22} x="65" y="30">
+                <text fontWeight={700} fontSize={22} x="40" y="30">
                   Identity V
                 </text>
               </svg>
@@ -89,10 +85,9 @@ const Portfolio: FC = () => {
                 fill="currentColor"
                 xmlns="http://www.w3.org/2000/svg"
               >
-                <text x="30" y="25" fontWeight={700} fontSize={18}>
+                <text x="10" y="25" fontWeight={700} fontSize={18}>
                   Kraken Academy!!
                 </text>
-                <path d="M16 6L29.8564 30H2.14359L16 6Z" />
               </svg>
             </div>
 
@@ -105,10 +100,9 @@ const Portfolio: FC = () => {
                 fill="currentColor"
                 xmlns="http://www.w3.org/2000/svg"
               >
-                <text x="30" y="25" fontWeight={700} fontSize={18}>
+                <text x="10" y="25" fontWeight={700} fontSize={18}>
                   Lapis x Labyrinth
                 </text>
-                <path d="M5.71591 8H0.136364L7.28409 19.6364L0 31.2727H5.63636L10.4091 23.3295H10.5909L15.3636 31.2727H21.0227L13.7614 19.6364L20.8636 8H15.3068L10.5909 15.9318H10.4091L5.71591 8Z" />
               </svg>
             </div>
 
@@ -121,10 +115,9 @@ const Portfolio: FC = () => {
                 fill="currentColor"
                 xmlns="http://www.w3.org/2000/svg"
               >
-                <text x="20" y="25" fontWeight={700} fontSize={18}>
+                <text x="10" y="25" fontWeight={700} fontSize={18}>
                   TELEPORT BATTLE VR
                 </text>
-                <circle cx="7" cy="20" r="7" />
               </svg>
             </div>
           </div>
