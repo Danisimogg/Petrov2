@@ -75,11 +75,11 @@ ul.style2 li:before {
 }
 .iframe > iframe {
   margin-top: 28px;
-  width: 48%;
+  width: 45%;
   min-height: 444px;
   background: var(--color-bg-variant);
-  padding: 1.2rem;
-  border-radius: 2rem;
+  padding: 0px;
+  border-radius: 6px;
   border: 1px solid transparent;
   transition: var(--transition);
 }

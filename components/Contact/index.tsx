@@ -1,8 +1,8 @@
 /* eslint-disable prettier/prettier */
 import type { FC } from 'react'
 import React, { useRef } from 'react'
-import { RiMessengerLine } from 'react-icons/ri'
-import { RxDiscordLogo } from 'react-icons/rx'
+import { BsDiscord } from 'react-icons/bs'
+import { AiFillFacebook } from 'react-icons/ai'
 import emailjs from 'emailjs-com'
 import { useRouter } from 'next/router'
 
@@ -45,14 +45,14 @@ const Contact: FC = () => {
               <div className="grid gap-3">
                 <div>
                   <label htmlFor="name" className="sr-only">
-                    {t ? 'Your Full Name' : ' お名前（フルネーム'}
+                    {t ? 'Your Full Name' : ' お名前'}
                   </label>
                   <input
                     type="text"
                     name="name"
                     id="name"
                     className="block w-full rounded-md border border-gray-300  py-3 px-4 text-sm focus:border-blue-500 focus:ring-blue-500 dark:border-gray-700 dark:bg-gray-800 dark:text-gray-400"
-                    placeholder={t ? 'Your Full Name' : ' お名前（フルネーム'}
+                    placeholder={t ? 'Your Full Name' : ' お名前'}
                   />
                 </div>
 
@@ -105,15 +105,15 @@ const Contact: FC = () => {
 
           <div className="divide-y divide-gray-200 dark:divide-gray-800">
             <div className="flex items-center gap-x-7 py-6">
-              <RiMessengerLine
+              <AiFillFacebook
                 className="text-gray-800 dark:text-gray-200"
                 style={{ width: '24px', height: '24px' }}
               />
               <div>
-                <h3 className="font-semibold text-gray-800 dark:text-gray-200">Whatsapp</h3>
+                <h3 className="font-semibold text-gray-800 dark:text-gray-200">Facebook</h3>
                 <a
                   className="mt-2 inline-flex items-center gap-x-2 text-sm font-medium text-gray-600 underline hover:text-gray-800 dark:text-gray-400 dark:hover:text-gray-200"
-                  href="https://wa.me/914234567890"
+                  href="https://www.facebook.com/svyatoslav.petrov.composer"
                 >
                   Svyatoslav Petrov
                   <svg
@@ -134,9 +134,8 @@ const Contact: FC = () => {
                 </a>
               </div>
             </div>
-
             <div className=" flex items-center gap-x-7 py-6">
-              <RxDiscordLogo
+              <BsDiscord
                 className="text-gray-800 dark:text-gray-200"
                 style={{ width: '24px', height: '24px' }}
               />

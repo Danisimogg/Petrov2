@@ -4,14 +4,15 @@ import SectionContainer from '../components/SectionContainer'
 
 interface Props {
   children: ReactNode
+  footer?: boolean
 }
 
-export default function HomeLayout({ children }: Props) {
+export default function HomeLayout({ children, footer = true }: Props) {
   return (
     <SectionContainer>
       <div className="flex flex-col justify-evenly pt-6 md:pt-9">
         <main>{children}</main>
-        <Footer />
+        {footer && <Footer />}
       </div>
     </SectionContainer>
   )

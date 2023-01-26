@@ -51,16 +51,16 @@ export default function Intro() {
             style={{ opacity: opacityForBlock(progress, 1) }}
           >
             {t
-              ? 'I am passionate about creating music that engages and inspires people.'
-              : '私は、人々を魅了し、感動させる音楽を創り出すことに情熱を注いでいます。'}
+              ? '{Passionate about creating music that engages and inspires people.'
+              : '人々を魅了し、感動させる音楽を創り出すことに情熱を注いでいます。'}
           </span>
           <span
             className="introText inline-block"
             style={{ opacity: opacityForBlock(progress, 2) }}
           >
             {t
-              ? `I am constantly striving to improve my craft and push the boundaries of what is possible with music.`
-              : '私は常に自分の技術を向上させ、音楽で可能なことの限界を押し広げようと努力しています。'}
+              ? `Constantly striving to improve my craft and push the boundaries of what is possible with music.`
+              : '常に自分の技術を向上させ、音楽で可能なことの限界を押し広げようと努力しています。'}
           </span>
         </div>
       </div>

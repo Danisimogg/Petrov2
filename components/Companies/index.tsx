@@ -26,7 +26,7 @@ const Companies: FC = () => {
                 }}
               >
                 <h2 className="md:text-2xl mb-12 font-bold uppercase text-slate-900 dark:text-white sm:ml-3">
-                  {t ? ' Trusted by the best companies' : ' ベストカンパニーからの信頼'}
+                  {t ? ' Trusted by the best companies' : ' 信頼をされている会社'}
                   <br />
                   <span className="">{t ? ' around the world' : ' せかいじゅう'}</span>
                 </h2>
