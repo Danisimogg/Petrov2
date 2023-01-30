@@ -51,7 +51,7 @@ export default function Intro() {
             style={{ opacity: opacityForBlock(progress, 1) }}
           >
             {t
-              ? '{Passionate about creating music that engages and inspires people.'
+              ? 'Passionate about creating music that engages and inspires people.'
               : '人々を魅了し、感動させる音楽を創り出すことに情熱を注いでいます。'}
           </span>
           <span
