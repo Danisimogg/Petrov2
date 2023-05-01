@@ -3,13 +3,14 @@ import s from './style/portfolio.module.css'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
 
+//1 - full music 2- no full music  3 and effects
 const data = [
   {
     id: 1,
     title: 'Lapis x Labyrinth',
     image:
       '<iframe src="https://www.youtube.com/embed/mkxZxz2BqCs" title="ラピス・リ・アビス　プロモーションムービー" allowfullscreen></iframe>',
-    fullMusic: false,
+    fullMusic: 2,
     company: 'Nihon ichi software Japan',
     platforms: { ps4: true, psVita: true, nintendoSwitch: true },
     site: 'https://nisamerica.com/games/lapis-labyrinth/',
@@ -19,7 +20,7 @@ const data = [
     title: 'Liar princess and the blind prince',
     image:
       '<iframe src="https://www.youtube.com/embed/h9yPYXYkDxQ"allowfullscreen title="嘘つき姫と盲目王子　朗読ムービー"></iframe>',
-    fullMusic: false,
+    fullMusic: 2,
     company: 'Nihon ichi software Japan',
     platforms: { ps4: true, psVita: true, nintendoSwitch: true },
     site: 'https://nisamerica.com/games/the-liar-princess/',
@@ -29,7 +30,7 @@ const data = [
     title: 'Kraken Academy!!',
     image:
       '<iframe src="https://www.youtube.com/embed/1QxpadGmKd0" allowfullscreen title="Kraken Academy!! Steam Trailer"></iframe>',
-    fullMusic: true,
+    fullMusic: 1,
     company: 'happy broccoli games',
     platforms: { steam: true, gog: true },
     site: 'https://www.kraken-academy.com/',
@@ -39,7 +40,7 @@ const data = [
     title: 'わるい王様とりっぱな勇者',
     image:
       '<iframe src="https://www.youtube.com/embed/SsquS78Q2jg" title="『わるい王様とりっぱな勇者』サウンドトラック試聴ムービー" allowfullscreen></iframe>',
-    fullMusic: false,
+    fullMusic: 2,
     company: 'happy broccoli games',
     platforms: { nintendoSwitch: true, ps4: true, ps5: true },
     site: 'https://www.kraken-academy.com/',
@@ -48,10 +49,19 @@ const data = [
     id: 5,
     title: 'Kraken Academy!! (Second Trailer)',
     image: '<iframe src="https://www.youtube.com/embed/dQs0QBBEDEU" allowfullscreen></iframe>',
-    fullMusic: true,
+    fullMusic: 1,
     company: 'happy broccoli games',
     platforms: { steam: true, gog: true },
     site: 'https://www.kraken-academy.com/',
+  },
+  {
+    id: 6,
+    title: 'Speed Crew - Official Nintendo Switch ',
+    image: '<iframe src="https://www.youtube.com/embed/lN7IG9V8yk8" allowfullscreen></iframe>',
+    fullMusic: 3,
+    company: 'Wild Fields',
+    platforms: { nintendoSwitch: true },
+    site: 'https://wildfieldsgames.com/',
   },
 ]
 
@@ -84,13 +94,17 @@ const PortfolioVideo: FC = () => {
 
                 <div className="p-3 sm:p-1">
                   <p className="mb-2 block  text-sm text-gray-600 font-bold">
-                    {fullMusic
+                    {fullMusic === 1
                       ? t
-                        ? 'Music By Svyatoslav Petrov'
-                        : ' ミュージック・バイ Svyatoslav Petrov'
+                        ? 'Music By Petrov Svyatoslav'
+                        : ' ミュージック・バイ Petrov Svyatoslav'
+                      : fullMusic === 2
+                      ? t
+                        ? 'Part of the music by Petrov Svyatoslav'
+                        : '音楽の一部を担当した'
                       : t
-                      ? 'Part of the music by Petrov Svyatoslav'
-                      : '音楽の一部を担当した'}
+                      ? 'Music & SFX by Petrov Svyatoslav'
+                      : 'ミュージック& SFX　バイ'}
                   </p>
                   <p className="mb-2 text-sm text-gray-600 font-bold">
                     {t ? 'Company Official Site:' : ' 会社のオフィシャルサイトです。'}{' '}
