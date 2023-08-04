@@ -49,7 +49,7 @@ export default function Hero(): ReactElement {
                 </FadeUp>
                 <FadeUp duration={0.6} delay={0.2}>
                   <h2 className="font-medium opacity-80 text-3xl sm:text-6xl md:text-6xl xl:text-7xl">
-                    {t ? 'I create music.' : '私は音楽を創る.'}
+                    {t ? 'I create music & game audio.' : '音を作っている.'}
                   </h2>
                 </FadeUp>
                 <FadeRight duration={0.5} delay={0.8}>
