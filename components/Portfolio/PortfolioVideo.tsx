@@ -63,6 +63,15 @@ const data = [
     platforms: { nintendoSwitch: true },
     site: 'https://wildfieldsgames.com/',
   },
+  {
+    id: 7,
+    title: "A Cat's manor ",
+    image: '<iframe src="https://www.youtube.com/embed/uz5LAZDBAto" allowfullscreen></iframe>',
+    fullMusic: 2,
+    company: 'Happiest Dark Corner',
+    platforms: { steam: true },
+    site: 'https://store.steampowered.com/app/667430/A_Cats_Manor/',
+  },
 ]
 
 const PortfolioVideo: FC = () => {
@@ -101,7 +110,7 @@ const PortfolioVideo: FC = () => {
                       : fullMusic === 2
                       ? t
                         ? 'Part of the music by Petrov Svyatoslav'
-                        : '音楽の一部を担当した'
+                        : '音楽の一部を担当いたしました'
                       : t
                       ? 'Music & SFX by Petrov Svyatoslav'
                       : 'ミュージック& SFX　バイ'}
