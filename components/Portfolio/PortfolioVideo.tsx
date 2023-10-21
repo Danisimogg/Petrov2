@@ -31,7 +31,7 @@ const data = [
     image:
       '<iframe src="https://www.youtube.com/embed/1QxpadGmKd0" allowfullscreen title="Kraken Academy!! Steam Trailer"></iframe>',
     fullMusic: 1,
-    company: 'happy broccoli games',
+    company: 'Happy Broccoli Games',
     platforms: { steam: true, gog: true },
     site: 'https://www.kraken-academy.com/',
   },
@@ -41,7 +41,7 @@ const data = [
     image:
       '<iframe src="https://www.youtube.com/embed/SsquS78Q2jg" title="『わるい王様とりっぱな勇者』サウンドトラック試聴ムービー" allowfullscreen></iframe>',
     fullMusic: 2,
-    company: 'happy broccoli games',
+    company: 'Happy Broccoli Games',
     platforms: { nintendoSwitch: true, ps4: true, ps5: true },
     site: 'https://www.kraken-academy.com/',
   },
@@ -50,7 +50,7 @@ const data = [
     title: 'Kraken Academy!! (Second Trailer)',
     image: '<iframe src="https://www.youtube.com/embed/dQs0QBBEDEU" allowfullscreen></iframe>',
     fullMusic: 1,
-    company: 'happy broccoli games',
+    company: 'Happy Broccoli Games',
     platforms: { steam: true, gog: true },
     site: 'https://www.kraken-academy.com/',
   },
@@ -75,16 +75,16 @@ const data = [
   {
     id: 10,
     title: 'Odyssey Island (in development) ',
-    image: '<iframe src="https://www.youtube.com/embed/uz5LAZDBAto" allowfullscreen></iframe>',
+    image: '<iframe src="https://www.youtube.com/embed/QP9ui-TiNyY" allowfullscreen></iframe>',
     fullMusic: 1,
-    company: 'happy broccoli games',
     platforms: { steam: true },
+    company: 'Happy Broccoli Games',
     site: 'https://www.happybroccoligames.com/',
   },
   {
     id: 9,
     title: 'Seven Spheres (in development)',
-    image: '<iframe src="https://www.youtube.com/embed/Gz7oSZyGNI" allowfullscreen></iframe>',
+    image: '<iframe src="https://www.youtube.com/embed/-Gz7oSZyGNI" allowfullscreen></iframe>',
     fullMusic: 1,
     company: 'GameGGOGGO',
     platforms: { ios: true, android: true },
@@ -95,9 +95,9 @@ const data = [
     title: 'Kraken Academy - endroll music  by Petrov Svyatoslav',
     image: '<iframe src="https://www.youtube.com/embed/cw8Oxd0sjH0" allowfullscreen></iframe>',
     fullMusic: 1,
-    company: 'happy broccoli games',
-    platforms: { steam: true },
+    company: 'Happy Broccoli Games',
     site: 'https://www.kraken-academy.com/',
+    platforms: { steam: true },
   },
 ]
 
