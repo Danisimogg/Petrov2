@@ -1,6 +1,6 @@
 const siteMetadata = {
-  title: 'Svayatoslav Petrov',
-  author: 'Svayatoslav Petrov',
+  title: 'Svyatoslav Petrov(composer & sound designer from video games)',
+  author: 'Svyatoslav Petrov',
   headerTitle: 'petrov',
   description: 'Composer',
   language: 'en-us',

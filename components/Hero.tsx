@@ -43,9 +43,9 @@ export default function Hero(): ReactElement {
             <div className="-mt-36">
               <div ref={ref} className="flex flex-col space-y-2 cursor-default">
                 <FadeUp duration={0.6}>
-                  <h1 className="font-semibold text-5xl sm:text-7xl md:text-8xl xl:text-9xl">
+                  <h2 className="font-semibold text-5xl sm:text-7xl md:text-8xl xl:text-9xl">
                     Svyatoslav Petrov
-                  </h1>
+                  </h2>
                 </FadeUp>
                 <FadeUp duration={0.6} delay={0.2}>
                   <h2 className="font-medium opacity-80 text-3xl sm:text-6xl md:text-6xl xl:text-7xl">

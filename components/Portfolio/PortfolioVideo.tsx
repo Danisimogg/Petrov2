@@ -72,6 +72,33 @@ const data = [
     platforms: { steam: true },
     site: 'https://store.steampowered.com/app/667430/A_Cats_Manor/',
   },
+  {
+    id: 10,
+    title: 'Odyssey Island (in development) ',
+    image: '<iframe src="https://www.youtube.com/embed/uz5LAZDBAto" allowfullscreen></iframe>',
+    fullMusic: 1,
+    company: 'happy broccoli games',
+    platforms: { steam: true },
+    site: 'https://www.happybroccoligames.com/',
+  },
+  {
+    id: 9,
+    title: 'Seven Spheres (in development)',
+    image: '<iframe src="https://www.youtube.com/embed/Gz7oSZyGNI" allowfullscreen></iframe>',
+    fullMusic: 1,
+    company: 'GameGGOGGO',
+    platforms: { ios: true, android: true },
+    site: ' https://twitter.com/seven_sphere',
+  },
+  {
+    id: 8,
+    title: 'Kraken Academy - endroll music  by Petrov Svyatoslav',
+    image: '<iframe src="https://www.youtube.com/embed/cw8Oxd0sjH0" allowfullscreen></iframe>',
+    fullMusic: 1,
+    company: 'happy broccoli games',
+    platforms: { steam: true },
+    site: 'https://www.kraken-academy.com/',
+  },
 ]
 
 const PortfolioVideo: FC = () => {
@@ -155,6 +182,18 @@ const PortfolioVideo: FC = () => {
                     {platforms.gog && (
                       <span className="flex flex-col justify-center items-center whitespace-nowrap rounded-full bg-purple-100 px-2.5 py-0.5 text-xs text-purple-600">
                         GoG
+                      </span>
+                    )}
+
+                    {platforms.ios && (
+                      <span className="flex flex-col justify-center items-center whitespace-nowrap rounded-full bg-purple-100 px-2.5 py-0.5 text-xs text-purple-600">
+                        IOS
+                      </span>
+                    )}
+
+                    {platforms.android && (
+                      <span className="flex flex-col justify-center items-center whitespace-nowrap rounded-full bg-purple-100 px-2.5 py-0.5 text-xs text-purple-600">
+                        Android
                       </span>
                     )}
                   </div>
