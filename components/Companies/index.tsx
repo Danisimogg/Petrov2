@@ -33,9 +33,9 @@ const Companies: FC = () => {
                   <span className="">{t ? ' around the world' : ' せかいじゅう'}</span>
                 </h2>
                 <div className="grid gap-x-6 md:grid-cols-3">
-                  <div className="mb-12">
+                  {/* <div className="mb-12">
                     <Image src={Wargeiming} className="px-6 grayscale" alt="Wargeiming" />
-                  </div>
+                  </div> */}
 
                   <div className="mb-12">
                     <Image src={Kraken} className="px-6 grayscale" alt="Kraken" />
