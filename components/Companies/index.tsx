@@ -7,6 +7,7 @@ import Nix from 'public/assets/nix.png'
 import Netflix from 'public/assets/Netflix.png'
 import Samsung from 'public/assets/Samsung_Logo.svg.webp'
 import Wargeiming from 'public/assets/wargaming-net.png'
+import Wargeiming2 from 'public/assets/wargaming-2-logo.png'
 import { useRouter } from 'next/router'
 
 const Companies: FC = () => {
@@ -33,10 +34,9 @@ const Companies: FC = () => {
                   <span className="">{t ? ' around the world' : ' せかいじゅう'}</span>
                 </h2>
                 <div className="grid gap-x-6 md:grid-cols-3">
-                  {/* <div className="mb-12">
-                    <Image src={Wargeiming} className="px-6 grayscale" alt="Wargeiming" />
-                  </div> */}
-
+                  <div className="mb-12">
+                    <Image src={Wargeiming2} className="px-6 grayscale" alt="Wargeiming" />
+                  </div>
                   <div className="mb-12">
                     <Image src={Kraken} className="px-6 grayscale" alt="Kraken" />
                   </div>

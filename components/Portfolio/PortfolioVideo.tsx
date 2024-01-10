@@ -99,6 +99,33 @@ const data = [
     site: 'https://www.kraken-academy.com/',
     platforms: { steam: true },
   },
+  {
+    id: 11,
+    title: 'Duck Detective (in development)',
+    image: '<iframe src="https://www.youtube.com/embed/X_NCNvQSXeM" allowfullscreen></iframe>',
+    fullMusic: 1,
+    company: 'Happy Broccoli Games',
+    site: 'https://www.kraken-academy.com/',
+    platforms: { steam: true },
+  },
+  {
+    id: 12,
+    title: 'World of Tanks Blitz - Angar music',
+    image: '<iframe src="https://www.youtube.com/embed/KMs2UxKtwlY" allowfullscreen></iframe>',
+    fullMusic: 1,
+    company: 'Wargaming',
+    site: 'https://na.wotblitz.com/en/#/',
+    platforms: { ios: true, android: true },
+  },
+  {
+    id: 13,
+    title: 'Into the Necrovale',
+    image: '<iframe src="https://www.youtube.com/embed/PbkJ_F5ovm0" allowfullscreen></iframe>',
+    fullMusic: 1,
+    company: 'Casey Clyde',
+    site: 'https://store.steampowered.com/app/1717090/Into_the_Necrovale/',
+    platforms: { steam: true },
+  },
 ]
 
 const PortfolioVideo: FC = () => {
@@ -133,7 +160,7 @@ const PortfolioVideo: FC = () => {
                     {fullMusic === 1
                       ? t
                         ? 'Music By Petrov Svyatoslav'
-                        : ' ミュージック・バイ Petrov Svyatoslav'
+                        : ' 音楽制作 Petrov Svyatoslav'
                       : fullMusic === 2
                       ? t
                         ? 'Part of the music by Petrov Svyatoslav'
@@ -143,7 +170,7 @@ const PortfolioVideo: FC = () => {
                       : 'ミュージック& SFX　バイ'}
                   </p>
                   <p className="mb-2 text-sm text-gray-600 font-bold">
-                    {t ? 'Company Official Site:' : ' 会社のオフィシャルサイトです。'}{' '}
+                    {t ? 'Company Official Site:' : ' オフィシャルサイト。'}{' '}
                     <span className="text-indigo-500 inline-flex items-center md:mb-2 lg:mb-0">
                       <Link href={site}>{company}</Link>
                     </span>
