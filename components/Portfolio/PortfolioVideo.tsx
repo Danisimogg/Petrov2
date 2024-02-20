@@ -111,7 +111,7 @@ const data = [
   {
     id: 12,
     title: 'World of Tanks Blitz - Angar music',
-    image: '<iframe src="https://www.youtube.com/embed/KMs2UxKtwlY" allowfullscreen></iframe>',
+    image: '<iframe src="https://www.youtube.com/embed/VdlTJFt1Ovw" allowfullscreen></iframe>',
     fullMusic: 1,
     company: 'Wargaming',
     site: 'https://na.wotblitz.com/en/#/',
@@ -167,7 +167,7 @@ const PortfolioVideo: FC = () => {
                         : '音楽の一部を担当いたしました'
                       : t
                       ? 'Music & SFX by Petrov Svyatoslav'
-                      : 'ミュージック& SFX　バイ'}
+                      : '音楽制作、　SFX制作　Petrov Svyatoslav'}
                   </p>
                   <p className="mb-2 text-sm text-gray-600 font-bold">
                     {t ? 'Company Official Site:' : ' オフィシャルサイト。'}{' '}
