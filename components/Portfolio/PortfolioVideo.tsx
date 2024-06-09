@@ -58,7 +58,7 @@ const data = [
     id: 6,
     title: 'Speed Crew - Official Nintendo Switch ',
     image: '<iframe src="https://www.youtube.com/embed/lN7IG9V8yk8" allowfullscreen></iframe>',
-    fullMusic: 3,
+    fullMusic: 5,
     company: 'Wild Fields',
     platforms: { nintendoSwitch: true },
     site: 'https://wildfieldsgames.com/',
@@ -126,6 +126,33 @@ const data = [
     site: 'https://store.steampowered.com/app/1717090/Into_the_Necrovale/',
     platforms: { steam: true },
   },
+  {
+    id: 14,
+    title: 'Duck Detective - the secret salami',
+    image: '<iframe src="https://www.youtube.com/embed/R4s-Pu0HXMo" allowfullscreen></iframe>',
+    fullMusic: 1,
+    company: 'Happy Broccoli Games',
+    site: 'https://www.happybroccoligames.com/',
+    platforms: { steam: true, nintendoSwitch: true, gog: true, xbox: true },
+  },
+  {
+    id: 15,
+    title: 'Duck Detective - the secret salami',
+    image: '<iframe src="https://www.youtube.com/embed/dmstMrXlVHI" allowfullscreen></iframe>',
+    fullMusic: 3,
+    company: 'Happy Broccoli Games',
+    site: 'https://www.happybroccoligames.com/',
+    platforms: { steam: true, nintendoSwitch: true, gog: true, xbox: true },
+  },
+  {
+    id: 16,
+    title: 'Swordhaven: Iron Conspiracy',
+    image: '<iframe src="https://www.youtube.com/embed/WBEAV8_CvrE" allowfullscreen></iframe>',
+    fullMusic: 4,
+    company: 'Atom RPG',
+    site: 'https://atomrpg.com/',
+    platforms: { steam: true },
+  },
 ]
 
 const PortfolioVideo: FC = () => {
@@ -165,6 +192,14 @@ const PortfolioVideo: FC = () => {
                       ? t
                         ? 'Part of the music by Petrov Svyatoslav'
                         : '音楽の一部を担当いたしました'
+                      : fullMusic === 3
+                      ? t
+                        ? 'FULL OST By Petrov Svyatoslav'
+                        : '音楽制作 Petrov Svyatoslav'
+                      : fullMusic === 4
+                      ? t
+                        ? 'Part of music, MENU music By Petrov Svyatoslav'
+                        : '音楽制作一部 Petrov Svyatoslav'
                       : t
                       ? 'Music & SFX by Petrov Svyatoslav'
                       : '音楽制作、　SFX制作　Petrov Svyatoslav'}
@@ -215,6 +250,12 @@ const PortfolioVideo: FC = () => {
                     {platforms.ios && (
                       <span className="flex flex-col justify-center items-center whitespace-nowrap rounded-full bg-purple-100 px-2.5 py-0.5 text-xs text-purple-600">
                         IOS
+                      </span>
+                    )}
+
+                    {platforms.xbox && (
+                      <span className="flex flex-col justify-center items-center whitespace-nowrap rounded-full bg-purple-100 px-2.5 py-0.5 text-xs text-purple-600">
+                        Xbox
                       </span>
                     )}
 
