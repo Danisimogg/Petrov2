@@ -153,6 +153,51 @@ const data = [
     site: 'https://atomrpg.com/',
     platforms: { steam: true },
   },
+  {
+    id: 17,
+    title: 'Duck Detective: the Ghost of Glamping',
+    image: '<iframe src="https://www.youtube.com/embed/YSen3srIrHQ" allowfullscreen></iframe>',
+    fullMusic: 1,
+    company: 'Happy Broccoli Games',
+    site: 'https://www.happybroccoligames.com/',
+    platforms: { steam: true },
+  },
+  // {
+  //   id: 18,
+  //   title: 'The Perfect Couple: Netflix Stories',
+  //   image: '<iframe src="https://www.youtube.com/embed/xhFqpBiCIrs" allowfullscreen></iframe>',
+  //   fullMusic: 5,
+  //   company: 'Netflix',
+  //   site: 'https://www.netflix.com/',
+  //   platforms: { netflix: true, android: true, ios: true },
+  // },
+  // {
+  //   id: 19,
+  //   title: 'Outer Banks: Netflix Stories',
+  //   image: '<iframe src="https://www.youtube.com/embed/0zQjyHkowbI" allowfullscreen></iframe>',
+  //   fullMusic: 5,
+  //   company: 'Netflix',
+  //   site: 'https://www.netflix.com/',
+  //   platforms: { netflix: true, android: true, ios: true },
+  // },
+  // {
+  //   id: 20,
+  //   title: 'Perfect Match: Netflix Stories',
+  //   image: '<iframe src="https://www.youtube.com/embed/re-gfsLcFgQ" allowfullscreen></iframe>',
+  //   fullMusic: 5,
+  //   company: 'Netflix',
+  //   site: 'https://www.netflix.com/',
+  //   platforms: { netflix: true, android: true, ios: true },
+  // },
+  // {
+  //   id: 21,
+  //   title: 'Sweet Magnolias: Netflix Stories',
+  //   image: '<iframe src="https://www.youtube.com/embed/RpGxm7vwIEM" allowfullscreen></iframe>',
+  //   fullMusic: 5,
+  //   company: 'Netflix',
+  //   site: 'https://www.netflix.com/',
+  //   platforms: { netflix: true, android: true, ios: true },
+  // },
 ]
 
 const PortfolioVideo: FC = () => {
@@ -218,6 +263,11 @@ const PortfolioVideo: FC = () => {
                     {platforms.steam && (
                       <span className="flex flex-col justify-center items-center whitespace-nowrap rounded-full bg-purple-100 px-2.5 py-0.5 text-xs text-purple-600">
                         Steam
+                      </span>
+                    )}
+                    {platforms.netflix && (
+                      <span className="flex flex-col justify-center items-center whitespace-nowrap rounded-full bg-purple-100 px-2.5 py-0.5 text-xs text-purple-600">
+                        Netflix
                       </span>
                     )}
                     {platforms.nintendoSwitch && (
