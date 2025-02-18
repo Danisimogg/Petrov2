@@ -265,11 +265,11 @@ const PortfolioVideo: FC = () => {
                         Steam
                       </span>
                     )}
-                    {platforms.netflix && (
+                    {/* {platforms.netflix && (
                       <span className="flex flex-col justify-center items-center whitespace-nowrap rounded-full bg-purple-100 px-2.5 py-0.5 text-xs text-purple-600">
                         Netflix
                       </span>
-                    )}
+                    )} */}
                     {platforms.nintendoSwitch && (
                       <span className="flex flex-col justify-center items-center whitespace-nowrap rounded-full bg-purple-100 px-2.5 py-0.5 text-xs text-purple-600">
                         Nintendo Switch
