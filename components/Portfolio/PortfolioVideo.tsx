@@ -165,7 +165,7 @@ const data = [
   {
     id: 18,
     title: 'Folklands',
-    image: '<iframe src="https://www.youtube.com/embed/ZHACoFkWP" allowfullscreen></iframe>',
+    image: '<iframe src="https://www.youtube.com/embed/QLPO-HfzJzA" allowfullscreen></iframe>',
     fullMusic: 1,
     company: 'Light Up Games',
     site: 'https://store.steampowered.com/developer/LightUpGames',
