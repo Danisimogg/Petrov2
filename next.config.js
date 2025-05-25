@@ -18,6 +18,23 @@ module.exports = withContentlayer(
     eslint: {
       dirs: ['pages', 'components', 'lib', 'layouts', 'scripts'],
     },
+    images: {
+      domains: ['img.youtube.com', 'via.placeholder.com'],
+      remotePatterns: [
+        {
+          protocol: 'https',
+          hostname: 'img.youtube.com',
+          port: '',
+          pathname: '/vi/**',
+        },
+        {
+          protocol: 'https',
+          hostname: 'via.placeholder.com',
+          port: '',
+          pathname: '/**',
+        },
+      ],
+    },
     webpack: (config) => {
       config.module.rules.push({
         test: /\.svg$/,
