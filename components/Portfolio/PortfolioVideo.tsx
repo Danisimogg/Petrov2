@@ -587,31 +587,6 @@ const GameCard: FC<GameCardProps> = ({ game, isFlipped, onFlip, onClickOutside, 
             }`}
           />
 
-          {/* Enhanced Play Button Overlay */}
-          <div
-            className={`absolute inset-0 flex items-center justify-center transition-all duration-500 ${
-              isHovered ? 'opacity-100' : 'opacity-70 sm:opacity-0'
-            }`}
-          >
-            <div
-              className={`bg-white/30 backdrop-blur-md rounded-full p-4 sm:p-6 border border-white/40 shadow-2xl transition-all duration-500 ease-out ${
-                isHovered
-                  ? 'scale-110 bg-white/40 border-white/60 shadow-white/20'
-                  : 'scale-100 sm:scale-90'
-              }`}
-            >
-              <svg
-                className={`w-8 h-8 sm:w-10 lg:w-12 text-white transition-all duration-300 ${
-                  isHovered ? 'drop-shadow-lg' : ''
-                }`}
-                fill="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path d="M8 5v14l11-7z" />
-              </svg>
-            </div>
-          </div>
-
           {/* Enhanced Music Attribution Badge */}
           <div
             className={`absolute top-2 sm:top-4 left-2 sm:left-4 backdrop-blur-sm rounded-full px-2 sm:px-3 py-1 sm:py-1.5 transition-all duration-500 ${
@@ -708,7 +683,7 @@ const GameCard: FC<GameCardProps> = ({ game, isFlipped, onFlip, onClickOutside, 
               >
                 <path d="M8 5v14l11-7z" />
               </svg>
-              {t ? 'Watch Trailer' : 'トレーラーを見る'}
+              {t ? 'Watch' : 'トレーラ'}
             </span>
           </button>
         </div>
